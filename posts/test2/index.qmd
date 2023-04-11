@@ -1,0 +1,10 @@
+---
+title: "테스트2"
+author: "성민석"
+date: "2023-04-11"
+categories: [news]
+---
+
+안녕하세요 
+
+![](thumbnail.jpg)
