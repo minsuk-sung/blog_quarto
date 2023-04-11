@@ -1,6 +1,7 @@
 # More details: https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Minsuk Sung"
