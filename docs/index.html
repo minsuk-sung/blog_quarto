@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -149,11 +149,11 @@ cookieconsent.run({
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">about</span></a>
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./project.html" rel="" target="">
- <span class="menu-text">project</span></a>
+ <span class="menu-text">Project</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/minsuk-sung" rel="" target=""><i class="bi bi-github" role="img">
@@ -200,7 +200,7 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(4)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="ai">ai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -209,11 +209,64 @@ cookieconsent.run({
 
 
 
-
+<p>Deep-Diving into the world of Deep Learning and Trading</p>
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681218054195" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="0" data-categories="code,ai" data-listing-date-sort="1681225200000" data-listing-file-modified-sort="1681234276555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/test/chatgpt_example.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ChatGPT in Python
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
+code
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ai'); return false;">
+ai
+</div>
+</div>
+<div class="card-text listing-description">
+Copyright © 2023 Minsuk Sung All rights reserved.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+성민석
+</div>
+<div class="listing-date">
+Apr 12, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681218054195" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./posts/post-with-code/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -249,7 +302,7 @@ Apr 11, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="news" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681224866222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="news" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681224866222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./posts/test/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts\test\thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -277,7 +330,7 @@ Apr 11, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="news" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681218054196" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="3" data-categories="news" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681218054196" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./posts/test2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts\test2\thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -305,7 +358,7 @@ Apr 11, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="news" data-listing-date-sort="1680879600000" data-listing-file-modified-sort="1681218054197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="4" data-categories="news" data-listing-date-sort="1680879600000" data-listing-file-modified-sort="1681218054197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./posts/welcome/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts\welcome\thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -337,7 +390,7 @@ Apr 8, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div><p>Copyright © 2023 Minsuk Sung All rights reserved.</p></main> <!-- /main -->
+</div><p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -685,6 +738,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="minsuk-sung/minsuk-sung.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 <footer class="footer">

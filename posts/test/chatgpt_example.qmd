@@ -1,0 +1,57 @@
+---
+title: ChatGPT in Python
+format:
+  html:
+    code-fold: false
+author: 성민석
+date: '2023-04-12'
+categories:
+  - code
+  - ai
+jupyter: backtest
+---
+
+## 간단한 ChatGPT 코드
+
+```{python}
+import openai
+import getpass
+
+YOUR_API_KEY = getpass.getpass('Input your api key: ')
+```
+
+```{python}
+def chatGPT(prompt, API_KEY=YOUR_API_KEY):
+
+    # set api key
+    openai.api_key = API_KEY
+
+    # Call the chat GPT API
+    completion = openai.Completion.create(
+        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'
+        prompt=prompt,
+        temperature=0.5,
+        max_tokens=1024,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    return completion['choices'][0]['text']
+```
+
+```{python}
+prompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'
+```
+
+```{python}
+result = chatGPT(prompt).strip()
+print('\nAnswer: {}'.format(result))
+```
+
+## 이후 과정
+```bash
+$ quarto convert chatgpt_example.ipynb
+$ quarto render --no-execute-daemon
+```
+

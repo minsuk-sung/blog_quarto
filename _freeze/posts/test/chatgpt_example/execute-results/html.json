@@ -1,0 +1,11 @@
+{
+  "hash": "ff82e0470d7ea5171a4a3083db4cab56",
+  "result": {
+    "markdown": "---\ntitle: ChatGPT in Python\nformat:\n  html:\n    code-fold: false\nauthor: 성민석\ndate: '2023-04-12'\ncategories:\n  - code\n  - ai\n---\n\n## 간단한 ChatGPT 코드\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport openai\nimport getpass\n\nYOUR_API_KEY = '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'\n```\n:::\n\n\n::: {.cell execution_count=2}\n``` {.python .cell-code}\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n```\n:::\n\n\n::: {.cell execution_count=3}\n``` {.python .cell-code}\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n```\n:::\n\n\n::: {.cell execution_count=4}\n``` {.python .cell-code}\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n\nAnswer: This is a test post for posting Quarto.\n```\n:::\n:::\n\n\n## Convert 방법\n```bash\n$ quarto convert chatgpt_example.ipynb\n```\n\n",
+    "supporting": [
+      "chatgpt_example_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

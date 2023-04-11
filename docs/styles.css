@@ -46,3 +46,7 @@ p {
   font-family: 'D2Coding', monospace !important;
   font-size: 95%;
 }
+
+.lefttext {
+  text-align: left;
+  }

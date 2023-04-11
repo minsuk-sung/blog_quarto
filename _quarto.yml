@@ -5,15 +5,23 @@ project:
 
 website:
   title: "Home"
+  image: 'title_images/new_profile.jpg'
   google-analytics: "UA-263609196-1"
   cookie-consent: true
+  comments: 
+    utterances:
+      repo: minsuk-sung/minsuk-sung.github.io
   site-url: https://minsuk-sung.github.io
   repo-url: https://github.com/minsuk-sung/minsuk-sung.github.io
+  body-header: Deep-Diving into the world of Deep Learning and Trading
   body-footer: Copyright © 2023 Minsuk Sung All rights reserved.
+  back-to-top-navigation: true
   navbar:
     right:
-      - about.qmd
-      - project.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Project"
+        href: project.qmd
       - icon: github
         href: https://github.com/minsuk-sung
       - icon: twitter
@@ -35,6 +43,11 @@ format:
     code-copy: hover
     code-overflow: wrap
     code-line-numbers: true
+
+execute:
+    cache: true
+    enabled: false
+    freeze: true  # never re-render during project render
 
 
 

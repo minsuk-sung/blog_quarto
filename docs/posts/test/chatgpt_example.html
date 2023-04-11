@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
-<meta name="dcterms.date" content="2023-04-11">
+<meta name="author" content="성민석">
+<meta name="dcterms.date" content="2023-04-12">
 
-<title>Home - Post With Code</title>
+<title>Home - ChatGPT in Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,11 +152,11 @@ cookieconsent.run({
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">about</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../project.html" rel="" target="">
- <span class="menu-text">Project</span></a>
+ <span class="menu-text">project</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/minsuk-sung" rel="" target=""><i class="bi bi-github" role="img">
@@ -185,11 +185,10 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">ChatGPT in Python</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
                 <div class="quarto-category">code</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">ai</div>
               </div>
                   </div>
   </div>
@@ -200,14 +199,14 @@ cookieconsent.run({
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>성민석 </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 11, 2023</p>
+        <p class="date">April 12, 2023</p>
       </div>
     </div>
     
@@ -219,7 +218,14 @@ cookieconsent.run({
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#간단한-chatgpt-코드" id="toc-간단한-chatgpt-코드" class="nav-link active" data-scroll-target="#간단한-chatgpt-코드">간단한 ChatGPT 코드</a></li>
+  <li><a href="#이후-과정" id="toc-이후-과정" class="nav-link" data-scroll-target="#이후-과정">이후 과정</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -227,12 +233,50 @@ cookieconsent.run({
 
 
 
-<p>Deep-Diving into the world of Deep Learning and Trading</p><p>This is a post with executable code.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>(<span class="st">'hello'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="간단한-chatgpt-코드" class="level2">
+<h2 class="anchored" data-anchor-id="간단한-chatgpt-코드">간단한 ChatGPT 코드</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> openai</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> getpass</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>YOUR_API_KEY <span class="op">=</span> getpass.getpass(<span class="st">'Input your api key: '</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">def</span> chatGPT(prompt, API_KEY<span class="op">=</span>YOUR_API_KEY):</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="co"># set api key</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>    openai.api_key <span class="op">=</span> API_KEY</span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="co"># Call the chat GPT API</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    completion <span class="op">=</span> openai.Completion.create(</span>
+<span id="cb2-8"><a href="#cb2-8"></a>        engine<span class="op">=</span><span class="st">'text-davinci-003'</span>,  <span class="co"># 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>        prompt<span class="op">=</span>prompt,</span>
+<span id="cb2-10"><a href="#cb2-10"></a>        temperature<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb2-11"><a href="#cb2-11"></a>        max_tokens<span class="op">=</span><span class="dv">1024</span>,</span>
+<span id="cb2-12"><a href="#cb2-12"></a>        top_p<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb2-13"><a href="#cb2-13"></a>        frequency_penalty<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb2-14"><a href="#cb2-14"></a>        presence_penalty<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a>    )</span>
+<span id="cb2-16"><a href="#cb2-16"></a></span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="cf">return</span> completion[<span class="st">'choices'</span>][<span class="dv">0</span>][<span class="st">'text'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>prompt <span class="op">=</span> <span class="st">'다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>result <span class="op">=</span> chatGPT(prompt).strip()</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="bu">print</span>(<span class="st">'</span><span class="ch">\n</span><span class="st">Answer: </span><span class="sc">{}</span><span class="st">'</span>.<span class="bu">format</span>(result))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="이후-과정" class="level2">
+<h2 class="anchored" data-anchor-id="이후-과정">이후 과정</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">$</span> quarto convert chatgpt_example.ipynb</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="ex">$</span> quarto render <span class="at">--no-execute-daemon</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
-<p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -580,8 +624,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<script src="https://utteranc.es/client.js" repo="minsuk-sung/minsuk-sung.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 <footer class="footer">

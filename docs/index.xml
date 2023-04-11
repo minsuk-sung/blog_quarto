@@ -9,8 +9,153 @@
 <link>https://minsuk-sung.github.io/index.html</link>
 <atom:link href="https://minsuk-sung.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
+<image>
+<url>https://minsuk-sung.github.io/title_images/new_profile.jpg</url>
+<title>Home</title>
+<link>https://minsuk-sung.github.io/index.html</link>
+</image>
 <generator>quarto-1.3.313</generator>
-<lastBuildDate>Mon, 10 Apr 2023 15:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 11 Apr 2023 15:00:00 GMT</lastBuildDate>
+<item>
+  <title>ChatGPT in Python</title>
+  <dc:creator>성민석 </dc:creator>
+  <link>https://minsuk-sung.github.io/posts/test/chatgpt_example.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="간단한-chatgpt-코드" class="level2">
+<h2 class="anchored" data-anchor-id="간단한-chatgpt-코드">간단한 ChatGPT 코드</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> openai</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> getpass</span>
+<span id="cb1-3"></span>
+<span id="cb1-4">YOUR_API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> getpass.getpass(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Input your api key: '</span>)</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> chatGPT(prompt, API_KEY<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>YOUR_API_KEY):</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># set api key</span></span>
+<span id="cb2-4">    openai.api_key <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> API_KEY</span>
+<span id="cb2-5"></span>
+<span id="cb2-6">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Call the chat GPT API</span></span>
+<span id="cb2-7">    completion <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> openai.Completion.create(</span>
+<span id="cb2-8">        engine<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text-davinci-003'</span>,  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'</span></span>
+<span id="cb2-9">        prompt<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>prompt,</span>
+<span id="cb2-10">        temperature<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>,</span>
+<span id="cb2-11">        max_tokens<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1024</span>,</span>
+<span id="cb2-12">        top_p<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb2-13">        frequency_penalty<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>,</span>
+<span id="cb2-14">        presence_penalty<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb2-15">    )</span>
+<span id="cb2-16"></span>
+<span id="cb2-17">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> completion[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'choices'</span>][<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text'</span>]</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1">prompt <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'</span></span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> chatGPT(prompt).strip()</span>
+<span id="cb4-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">Answer: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{}</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">format</span>(result))</span></code></pre></div>
+</div>
+</section>
+<section id="이후-과정" class="level2">
+<h2 class="anchored" data-anchor-id="이후-과정">이후 과정</h2>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> quarto convert chatgpt_example.ipynb</span>
+<span id="cb5-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> quarto render <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--no-execute-daemon</span></span></code></pre></div>
+
+
+</section>
+
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
+  <category>code</category>
+  <category>ai</category>
+  <guid>https://minsuk-sung.github.io/posts/test/chatgpt_example.html</guid>
+  <pubDate>Tue, 11 Apr 2023 15:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Post With Code</title>
   <dc:creator>Harlow Malloc</dc:creator>

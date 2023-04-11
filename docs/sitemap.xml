@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://minsuk-sung.github.io/about.html</loc>
-    <lastmod>2023-04-11T16:24:31.106Z</lastmod>
+    <lastmod>2023-04-11T18:09:36.979Z</lastmod>
   </url>
   <url>
     <loc>https://minsuk-sung.github.io/index.html</loc>
-    <lastmod>2023-04-11T16:24:32.963Z</lastmod>
+    <lastmod>2023-04-11T17:46:16.722Z</lastmod>
   </url>
   <url>
     <loc>https://minsuk-sung.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2023-04-11T16:24:33.520Z</lastmod>
+    <lastmod>2023-04-11T17:46:18.942Z</lastmod>
   </url>
   <url>
     <loc>https://minsuk-sung.github.io/posts/test/index.html</loc>
@@ -27,5 +27,13 @@
   <url>
     <loc>https://minsuk-sung.github.io/project.html</loc>
     <lastmod>2023-04-11T16:24:36.031Z</lastmod>
+  </url>
+  <url>
+    <loc>https://minsuk-sung.github.io/code/chatgpt_example.html</loc>
+    <lastmod>2023-04-11T18:09:53.300Z</lastmod>
+  </url>
+  <url>
+    <loc>https://minsuk-sung.github.io/posts/test/chatgpt_example.html</loc>
+    <lastmod>2023-04-11T17:31:50.735Z</lastmod>
   </url>
 </urlset>

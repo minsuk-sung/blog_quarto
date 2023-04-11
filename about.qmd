@@ -1,7 +1,8 @@
 ---
-title: "about"
+title: "Minsuk Sung"
 image: title_images/new_profile.jpg
 about:
+  id: lefttext
   template: solana
   image-shape: round
   links:
@@ -19,7 +20,11 @@ about:
 <!--
 Ref
 - https://quarto.org/docs/websites/website-about.html
+- https://quarto.org/docs/reference/projects/websites.html#about
+- https://stackoverflow.com/questions/73306595/with-quarto-how-can-i-right-left-center-align-justify-contents-within-a-column
 -->
+
+::: {.lefttext}
 
 - Phone : +82-10-5134-3621  
 - E-mail: minsuksung@korea.ac.kr  
@@ -143,3 +148,5 @@ Please contact me if you want to know more about me! See CV for more information
 |:-----:|-------|---|
 |2019|허브터미널 후보지역 선정방법|제 10-2019-0013100 호|
 |2019|Prediction of Human Path using GAN| - |
+
+:::
