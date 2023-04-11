@@ -4,9 +4,11 @@ project:
   output-dir: docs
 
 website:
-  title: "Minsuk Sung"
-  google-analytics: ""
-  repo-url: https://github.com/minsuk-sung/blog_quarto
+  title: "Home"
+  google-analytics: "UA-263609196-1"
+  site-url: https://minsuk-sung.github.io
+  repo-url: https://github.com/minsuk-sung/minsuk-sung.github.io
+  body-footer: Copyright © 2023 Minsuk Sung All rights reserved.
   navbar:
     right:
       - about.qmd
