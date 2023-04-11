@@ -1,5 +1,5 @@
 ---
-title: "테스트"
+title: "Quarto 테스트"
 format:
     html:
         code-fold: false
@@ -13,6 +13,14 @@ editor:
 안녕하세요!!
 
 ![](thumbnail.jpg)
+
+| fruit  | price  |
+|--------|--------|
+| apple  | 2.05   |
+| pear   | 1.37   |
+| orange | 3.09   |
+
+: Fruit prices {tbl-colwidths="[75,25]"}
 
 ```{python}
 #| label: fig-polar
@@ -35,3 +43,6 @@ plt.show()
 $$
 a^2 + b^2 = c^2
 $$
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+

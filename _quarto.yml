@@ -6,23 +6,35 @@ project:
 website:
   title: "Home"
   google-analytics: "UA-263609196-1"
+  cookie-consent: true
   site-url: https://minsuk-sung.github.io
   repo-url: https://github.com/minsuk-sung/minsuk-sung.github.io
   body-footer: Copyright © 2023 Minsuk Sung All rights reserved.
   navbar:
     right:
       - about.qmd
+      - project.qmd
       - icon: github
         href: https://github.com/minsuk-sung
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/minsuk__sung
+      - icon: linkedin
+        href: https://www.linkedin.com/in/minsuk-sung/
 format:
   html:
     toc: true
-    theme: [cosmo, theme.scss]
+
+    # https://quarto.org/docs/output-formats/html-themes.html#dark-mode
+    theme:
+      light: cosmo
+      dark: darkly
+    
     css: styles.css
-    code-copy: true
+
+    # https://quarto.org/docs/output-formats/html-code.html#line-numbers
+    code-copy: hover
     code-overflow: wrap
+    code-line-numbers: true
 
 
 

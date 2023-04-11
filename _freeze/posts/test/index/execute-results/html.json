@@ -1,7 +1,7 @@
 {
-  "hash": "5ad1ab70914ca46f395b6a401ded6c51",
+  "hash": "ae71ff196ffaeeb3aca011e61b9ee169",
   "result": {
-    "markdown": "---\ntitle: \"테스트\"\nformat:\n    html:\n        code-fold: false\nauthor: \"성민석\"\ndate: \"2023-04-11\"\ncategories: [news]\neditor:\n  render-on-save: true\n---\n\n안녕하세요!!\n\n![](thumbnail.jpg)\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![A line plot on a polar axis](index_files/figure-html/fig-polar-output-1.png){#fig-polar width=442 height=432}\n:::\n:::\n\n\n$$\na^2 + b^2 = c^2\n$$\n\n",
+    "markdown": "---\ntitle: \"Quarto 테스트\"\nformat:\n    html:\n        code-fold: false\nauthor: \"성민석\"\ndate: \"2023-04-11\"\ncategories: [news]\neditor:\n  render-on-save: true\n---\n\n안녕하세요!!\n\n![](thumbnail.jpg)\n\n| fruit  | price  |\n|--------|--------|\n| apple  | 2.05   |\n| pear   | 1.37   |\n| orange | 3.09   |\n\n: Fruit prices {tbl-colwidths=\"[75,25]\"}\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![A line plot on a polar axis](index_files/figure-html/fig-polar-output-1.png){#fig-polar width=442 height=432}\n:::\n:::\n\n\n$$\na^2 + b^2 = c^2\n$$\n\n\n{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}\n\n",
     "supporting": [
       "index_files"
     ],

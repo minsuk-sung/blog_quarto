@@ -10,7 +10,7 @@ about:
       href: https://twitter.com/minsuk__sung
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/minsuk-sung
+      href: https://www.linkedin.com/in/minsuk-sung/
     - icon: github
       text: Github
       href: https://github.com/minsuk-sung

@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://minsuk-sung.github.io/index.html</loc>
-    <lastmod>2023-04-11T14:03:29.457Z</lastmod>
+    <lastmod>2023-04-11T14:57:10.944Z</lastmod>
   </url>
   <url>
     <loc>https://minsuk-sung.github.io/about.html</loc>
-    <lastmod>2023-04-11T14:03:11.052Z</lastmod>
+    <lastmod>2023-04-11T14:32:44.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://minsuk-sung.github.io/posts/post-with-code/index.html</loc>
+    <lastmod>2023-04-11T14:36:17.075Z</lastmod>
+  </url>
+  <url>
+    <loc>https://minsuk-sung.github.io/posts/test2/index.html</loc>
+    <lastmod>2023-04-11T14:40:33.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://minsuk-sung.github.io/posts/test/index.html</loc>
+    <lastmod>2023-04-11T14:56:53.239Z</lastmod>
+  </url>
+  <url>
+    <loc>https://minsuk-sung.github.io/project.html</loc>
+    <lastmod>2023-04-11T14:57:13.644Z</lastmod>
   </url>
 </urlset>

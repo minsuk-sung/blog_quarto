@@ -29,7 +29,7 @@ font-style: inherit;">'hello'</span>)</span></code></pre></div>
 
 
 
- ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
   <category>news</category>
   <category>code</category>
   <category>analysis</category>
@@ -38,7 +38,7 @@ font-style: inherit;">'hello'</span>)</span></code></pre></div>
   <media:content url="https://minsuk-sung.github.io/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>테스트</title>
+  <title>Quarto 테스트</title>
   <dc:creator>성민석 </dc:creator>
   <link>https://minsuk-sung.github.io/posts/test/index.html</link>
   <description><![CDATA[ 
@@ -48,8 +48,35 @@ font-style: inherit;">'hello'</span>)</span></code></pre></div>
 
 <p>안녕하세요!!</p>
 <p><img src="https://minsuk-sung.github.io/posts/test/thumbnail.jpg" class="img-fluid"></p>
+<table class="table">
+<caption>Fruit prices</caption>
+<colgroup>
+<col style="width: 75%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>fruit</th>
+<th>price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>apple</td>
+<td>2.05</td>
+</tr>
+<tr class="even">
+<td>pear</td>
+<td>1.37</td>
+</tr>
+<tr class="odd">
+<td>orange</td>
+<td>3.09</td>
+</tr>
+</tbody>
+</table>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -113,10 +140,11 @@ font-style: inherit;">True</span>)</span>
 </div>
 </div>
 <p><img src="https://latex.codecogs.com/png.latex?%0Aa%5E2%20+%20b%5E2%20=%20c%5E2%0A"></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
 
- ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
   <category>news</category>
   <guid>https://minsuk-sung.github.io/posts/test/index.html</guid>
   <pubDate>Mon, 10 Apr 2023 15:00:00 GMT</pubDate>
@@ -135,7 +163,7 @@ font-style: inherit;">True</span>)</span>
 
 
 
- ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
   <category>news</category>
   <guid>https://minsuk-sung.github.io/posts/test2/index.html</guid>
   <pubDate>Mon, 10 Apr 2023 15:00:00 GMT</pubDate>
