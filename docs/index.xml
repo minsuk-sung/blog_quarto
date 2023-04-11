@@ -24,7 +24,7 @@
 
 
 
-
+<p>Deep-Diving into the world of Deep Learning and Trading</p>
 <section id="간단한-chatgpt-코드" class="level2">
 <h2 class="anchored" data-anchor-id="간단한-chatgpt-코드">간단한 ChatGPT 코드</h2>
 <div class="cell">
@@ -150,7 +150,7 @@ font-style: inherit;">--no-execute-daemon</span></span></code></pre></div>
 
 </section>
 
-<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>code</category>
   <category>ai</category>
   <guid>https://minsuk-sung.github.io/posts/test/chatgpt_example.html</guid>
@@ -165,7 +165,7 @@ font-style: inherit;">--no-execute-daemon</span></span></code></pre></div>
 
 
 
-<p>This is a post with executable code.</p>
+<p>Deep-Diving into the world of Deep Learning and Trading</p><p>This is a post with executable code.</p>
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
@@ -174,7 +174,7 @@ font-style: inherit;">'hello'</span>)</span></code></pre></div>
 
 
 
-<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>news</category>
   <category>code</category>
   <category>analysis</category>
@@ -191,7 +191,7 @@ font-style: inherit;">'hello'</span>)</span></code></pre></div>
 
 
 
-<p>안녕하세요!!</p>
+<p>Deep-Diving into the world of Deep Learning and Trading</p><p>안녕하세요!!</p>
 <p><img src="https://minsuk-sung.github.io/posts/test/thumbnail.jpg" class="img-fluid"></p>
 <table class="table">
 <caption>Fruit prices</caption>
@@ -220,7 +220,8 @@ font-style: inherit;">'hello'</span>)</span></code></pre></div>
 </tr>
 </tbody>
 </table>
-<div class="cell" data-execution_count="1">
+<div id="fig-polar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
@@ -275,21 +276,15 @@ font-style: inherit;">2</span>])</span>
 background-color: null;
 font-style: inherit;">True</span>)</span>
 <span id="cb1-12">plt.show()</span></code></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-polar" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://minsuk-sung.github.io/posts/test/index_files/figure-html/fig-polar-output-1.png" width="442" height="432" class="figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: A line plot on a polar axis</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: <strong>?(caption)</strong></figcaption><p></p>
 </figure>
-</div>
-</div>
 </div>
 <p><img src="https://latex.codecogs.com/png.latex?%0Aa%5E2%20+%20b%5E2%20=%20c%5E2%0A"></p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
 
-<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>news</category>
   <guid>https://minsuk-sung.github.io/posts/test/index.html</guid>
   <pubDate>Mon, 10 Apr 2023 15:00:00 GMT</pubDate>
@@ -303,12 +298,12 @@ font-style: inherit;">True</span>)</span>
 
 
 
-<p>안녕하세요</p>
+<p>Deep-Diving into the world of Deep Learning and Trading</p><p>안녕하세요</p>
 <p><img src="https://minsuk-sung.github.io/posts/test2/thumbnail.jpg" class="img-fluid"></p>
 
 
 
-<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>news</category>
   <guid>https://minsuk-sung.github.io/posts/test2/index.html</guid>
   <pubDate>Mon, 10 Apr 2023 15:00:00 GMT</pubDate>
@@ -322,13 +317,13 @@ font-style: inherit;">True</span>)</span>
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
+<p>Deep-Diving into the world of Deep Learning and Trading</p><p>This is the first post in a Quarto blog. Welcome!</p>
 <p><img src="https://minsuk-sung.github.io/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
 
-<p>Copyright © 2023 Minsuk Sung All rights reserved.</p> ]]></description>
+<p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>news</category>
   <guid>https://minsuk-sung.github.io/posts/welcome/index.html</guid>
   <pubDate>Fri, 07 Apr 2023 15:00:00 GMT</pubDate>

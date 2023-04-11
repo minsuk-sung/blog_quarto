@@ -63,48 +63,6 @@
     "text": "Patents\n\n\n\nYear\nTitle of the Invention\nPatent No.\n\n\n\n\n2019\n허브터미널 후보지역 선정방법\n제 10-2019-0013100 호\n\n\n2019\nPrediction of Human Path using GAN\n-"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Minsuk’s Research Notes",
-    "section": "",
-    "text": "Deep-Diving into the world of Deep Learning and Trading\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nChatGPT in Python\n\n\n\ncode\n\n\nai\n\n\n\n\n\n\n\n성민석\n\n\nApr 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 테스트\n\n\n\nnews\n\n\n\n\n\n\n\n성민석\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n테스트2\n\n\n\nnews\n\n\n\n\n\n\n\n성민석\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nApr 8, 2023\n\n\n\n\n\n\n\n\nNo matching items\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "Deep-Diving into the world of Deep Learning and TradingThis is a post with executable code.\nprint('hello')\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
-  },
-  {
-    "objectID": "posts/test/index.html",
-    "href": "posts/test/index.html",
-    "title": "Quarto 테스트",
-    "section": "",
-    "text": "안녕하세요!!\n\n\nFruit prices\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\\[\na^2 + b^2 = c^2\n\\]\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved."
-  },
-  {
-    "objectID": "posts/test2/index.html",
-    "href": "posts/test2/index.html",
-    "title": "테스트2",
-    "section": "",
-    "text": "안녕하세요\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved."
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "project",
-    "section": "",
-    "text": "TEST\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved."
-  },
-  {
     "objectID": "code/chatgpt_example.html",
     "href": "code/chatgpt_example.html",
     "title": "ChatGPT in Python",
@@ -119,34 +77,6 @@
     "text": "간단한 ChatGPT 코드\n\nimport openai\nimport getpass\n\nYOUR_API_KEY = getpass.getpass('Input your api key: ')\n\n\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n\n\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n\n\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))\n\n\nAnswer: This is a test post for posting Quarto."
   },
   {
-    "objectID": "code/chatgpt_example.html#convert-방법",
-    "href": "code/chatgpt_example.html#convert-방법",
-    "title": "ChatGPT in Python",
-    "section": "Convert 방법",
-    "text": "Convert 방법\n$ quarto convert chatgpt_example.ipynb"
-  },
-  {
-    "objectID": "posts/test/chatgpt_example.html",
-    "href": "posts/test/chatgpt_example.html",
-    "title": "ChatGPT in Python",
-    "section": "",
-    "text": "import openai\nimport getpass\n\nYOUR_API_KEY = getpass.getpass('Input your api key: ')\n\n\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n\n\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n\n\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))\nCopyright © 2023 Minsuk Sung All rights reserved."
-  },
-  {
-    "objectID": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
-    "href": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
-    "title": "ChatGPT in Python",
-    "section": "",
-    "text": "import openai\nimport getpass\n\nYOUR_API_KEY = getpass.getpass('Input your api key: ')\n\n\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n\n\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n\n\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))"
-  },
-  {
-    "objectID": "posts/test/chatgpt_example.html#convert-방법",
-    "href": "posts/test/chatgpt_example.html#convert-방법",
-    "title": "ChatGPT in Python",
-    "section": "Convert 방법",
-    "text": "Convert 방법\n$ quarto convert chatgpt_example.ipynb"
-  },
-  {
     "objectID": "code/chatgpt_example.html#이후-과정",
     "href": "code/chatgpt_example.html#이후-과정",
     "title": "ChatGPT in Python",
@@ -154,10 +84,66 @@
     "text": "이후 과정\n$ quarto convert chatgpt_example.ipynb\n$ quarto render --no-execute-daemon"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Minsuk’s Research Notes",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nChatGPT in Python\n\n\n\ncode\n\n\nai\n\n\n\n\n\n\n\n성민석\n\n\nApr 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 테스트\n\n\n\nnews\n\n\n\n\n\n\n\n성민석\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n테스트2\n\n\n\nnews\n\n\n\n\n\n\n\n성민석\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nApr 8, 2023\n\n\n\n\n\n\n\n\nNo matching items\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and TradingThis is a post with executable code.\nprint('hello')\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "posts/test/chatgpt_example.html",
+    "href": "posts/test/chatgpt_example.html",
+    "title": "ChatGPT in Python",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading\nCopyright © 2023 Minsuk Sung All rights reserved."
+  },
+  {
+    "objectID": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
+    "href": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
+    "title": "ChatGPT in Python",
+    "section": "간단한 ChatGPT 코드",
+    "text": "간단한 ChatGPT 코드\n\nimport openai\nimport getpass\n\nYOUR_API_KEY = getpass.getpass('Input your api key: ')\n\n\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n\n\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n\n\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))"
+  },
+  {
     "objectID": "posts/test/chatgpt_example.html#이후-과정",
     "href": "posts/test/chatgpt_example.html#이후-과정",
     "title": "ChatGPT in Python",
     "section": "이후 과정",
     "text": "이후 과정\n$ quarto convert chatgpt_example.ipynb\n$ quarto render --no-execute-daemon"
+  },
+  {
+    "objectID": "posts/test/index.html",
+    "href": "posts/test/index.html",
+    "title": "Quarto 테스트",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading안녕하세요!!\n\n\nFruit prices\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\nFigure 1: ?(caption)\n\n\n\\[\na^2 + b^2 = c^2\n\\]\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "posts/test2/index.html",
+    "href": "posts/test2/index.html",
+    "title": "테스트2",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading안녕하세요\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and TradingThis is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "project",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading\n\nTEST\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
   }
 ]
