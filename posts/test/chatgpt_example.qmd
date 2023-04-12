@@ -8,6 +8,10 @@ date: '2023-04-12'
 categories:
   - code
   - ai
+
+execute:
+    cache: true
+    enabled: false  # 이걸 활성화하면 코드 블럭이 망가짐
 ---
 
 ## 간단한 ChatGPT 코드

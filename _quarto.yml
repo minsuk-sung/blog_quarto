@@ -5,17 +5,24 @@ project:
 
 website:
   title: "Home"
+  favicon: 'title_images/ms-black-logo.png'
   image: 'title_images/new_profile.jpg'
   google-analytics: "UA-263609196-1"
   cookie-consent: true
+  page-navigation: true
   comments: 
     utterances:
       repo: minsuk-sung/minsuk-sung.github.io
   site-url: https://minsuk-sung.github.io
   repo-url: https://github.com/minsuk-sung/minsuk-sung.github.io
-  body-header: Deep-Diving into the world of Deep Learning and Trading
-  body-footer: Copyright © 2023 Minsuk Sung All rights reserved.
-  back-to-top-navigation: true
+  body-header: Deep-Diving into the world of `Deep Learning` and `Trading`
+  body-footer: <div><br><br><img src="https://ghchart.rshah.org/minsuk-sung" width=100%><br><br><br> <b>Copyright © 2023 Minsuk Sung All rights reserved.</b></div>
+  # back-to-top-navigation: true
+  sidebar:
+    search: true
+  search:
+    location: navbar
+    type: overlay
   navbar:
     right:
       - text: "About"
@@ -34,19 +41,21 @@ format:
 
     # https://quarto.org/docs/output-formats/html-themes.html#dark-mode
     theme:
-      light: cosmo
-      dark: darkly
+      light: [sandstone]
+      dark: [cyborg]
     
     css: styles.css
 
     # https://quarto.org/docs/output-formats/html-code.html#line-numbers
     code-copy: hover
-    code-overflow: wrap
+    # code-overflow: wrap
     code-line-numbers: true
 
 execute:
     cache: true
-    enabled: false
+    enable: # 이걸 활성화하면 코드 블럭이 망가짐
+      # echo: true  
+      output: true
     freeze: true  # never re-render during project render
 
 

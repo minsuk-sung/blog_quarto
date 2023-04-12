@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./title_images/ms-black-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
@@ -130,7 +131,7 @@ cookieconsent.run({
 <link rel="stylesheet" href="styles.css">
 <link rel="alternate" type="application/rss+xml" title="Home" href="index.xml"></head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -177,11 +178,24 @@ cookieconsent.run({
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Minsuk’s Research Notes</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-body">
       <h1 class="title">Minsuk’s Research Notes</h1>
                       </div>
   </div>
@@ -197,20 +211,27 @@ cookieconsent.run({
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="ai">ai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
 
 
 
-<p>Deep-Diving into the world of Deep Learning and Trading</p><p><img src="https://ghchart.rshah.org/minsuk-sung" width="100%"></p>
 
 
-
+<p>Deep-Diving into the world of <code>Deep Learning</code> and <code>Trading</code></p>
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
@@ -236,10 +257,10 @@ cookieconsent.run({
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="code,ai" data-listing-date-sort="1681225200000" data-listing-file-modified-sort="1681263110744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="0" data-categories="code,ai" data-listing-date-sort="1681225200000" data-listing-file-modified-sort="1681278666195" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./posts/test/chatgpt_example.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top"><img src="https://ghchart.rshah.org/minsuk-sung" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 ChatGPT in Python
@@ -253,7 +274,7 @@ ai
 </div>
 </div>
 <div class="card-text listing-description">
-Deep-Diving into the world of Deep Learning and Trading
+Deep-Diving into the world of <code>Deep Learning</code> and <code>Trading</code>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -289,7 +310,7 @@ analysis
 </div>
 </div>
 <div class="card-text listing-description">
-Deep-Diving into the world of Deep Learning and Trading
+Deep-Diving into the world of <code>Deep Learning</code> and <code>Trading</code>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -303,7 +324,7 @@ Apr 11, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="news" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681262945711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="news" data-listing-date-sort="1681138800000" data-listing-file-modified-sort="1681278512367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./posts/test/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/test/thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -317,7 +338,7 @@ news
 </div>
 </div>
 <div class="card-text listing-description">
-Deep-Diving into the world of Deep Learning and Trading
+Deep-Diving into the world of <code>Deep Learning</code> and <code>Trading</code>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -345,7 +366,7 @@ news
 </div>
 </div>
 <div class="card-text listing-description">
-Deep-Diving into the world of Deep Learning and Trading
+Deep-Diving into the world of <code>Deep Learning</code> and <code>Trading</code>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -373,7 +394,7 @@ news
 </div>
 </div>
 <div class="card-text listing-description">
-Deep-Diving into the world of Deep Learning and Trading
+Deep-Diving into the world of <code>Deep Learning</code> and <code>Trading</code>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -391,7 +412,9 @@ Apr 8, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div><p>Copyright © 2023 Minsuk Sung All rights reserved.</p><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div><div>
+<br><br><img src="https://ghchart.rshah.org/minsuk-sung" width="100%"><br><br><br> <b>Copyright © 2023 Minsuk Sung All rights reserved.</b>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
