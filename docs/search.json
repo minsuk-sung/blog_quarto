@@ -1,66 +1,52 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Minsuk Sung",
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and TradingThis is a post with executable code.\nprint('hello')\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "posts/test/index.html",
+    "href": "posts/test/index.html",
+    "title": "Quarto 테스트",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading안녕하세요!!\n\n\nFruit prices\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\nFigure 1: ?(caption)\n\n\n\\[\na^2 + b^2 = c^2\n\\]\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+  },
+  {
+    "objectID": "posts/test/chatgpt_example.html",
+    "href": "posts/test/chatgpt_example.html",
+    "title": "ChatGPT in Python",
     "section": "",
     "text": "Deep-Diving into the world of Deep Learning and Trading\nCopyright © 2023 Minsuk Sung All rights reserved."
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Minsuk Sung",
-    "section": "Education",
-    "text": "Education\n\nDepartment of Computer Engineering, Hongik University (Mar. 2014 ~ Feb. 2020)\nSOAS, University of London (Sep. 2016 ~ Dec. 2016)\nDepartment of Artificial Intelligence, Korea University - Integrated Master-Ph.D. Student (Mar. 2020 ~ Current)"
+    "objectID": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
+    "href": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
+    "title": "ChatGPT in Python",
+    "section": "간단한 ChatGPT 코드",
+    "text": "간단한 ChatGPT 코드\n\nimport openai\nimport getpass\n\nYOUR_API_KEY = getpass.getpass('Input your api key: ')\n\n\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n\n\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n\n\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))"
   },
   {
-    "objectID": "about.html#research-interest",
-    "href": "about.html#research-interest",
-    "title": "Minsuk Sung",
-    "section": "Research Interest",
-    "text": "Research Interest\n\nDeep Learning\n\nComputer Vision\n\nHighly Cluttered Object detection"
+    "objectID": "posts/test/chatgpt_example.html#이후-과정",
+    "href": "posts/test/chatgpt_example.html#이후-과정",
+    "title": "ChatGPT in Python",
+    "section": "이후 과정",
+    "text": "이후 과정\n$ quarto convert chatgpt_example.ipynb\n$ quarto render --no-execute-daemon"
   },
   {
-    "objectID": "about.html#publications",
-    "href": "about.html#publications",
-    "title": "Minsuk Sung",
-    "section": "Publications",
-    "text": "Publications\n\nInternational Conference\n\nHa Yoon Song, Moo Sang Beak, Minsuk Sung, “Generating Human Mobility Route Based on Generative Adversarial Network”, Federated Conference on Computer Science and Information Systems(FedCSIS), 2019.\n\n\n\nDomestic Conference\n\nMinsuk Sung, Ha Yoon Song, “Prediction on Visited Stations through the Analysis of Individual Movements Data”, Korea Institute of Information Scientists and Engineers, 2019"
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and TradingThis is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
   },
   {
-    "objectID": "about.html#activity",
-    "href": "about.html#activity",
-    "title": "Minsuk Sung",
-    "section": "Activity",
-    "text": "Activity\n\nCogitive System Lab - Integrated Master-Ph.D. Student (Nov. 2020 - Current)\n\nHighly cluttered object detection\n\n\n\nPRML Lab - Integrated Master-Ph.D. Student (Jan. 2020 - Oct. 2020)\n\nMinimizing slippage/implemention shortfall on optimized trade execution using reinforcement learning\n\n\n\nUndergraduate student, PEM Lab (Mar. 2018 ~ Feb. 2020)\n\nCombining Human Mobility Data with Machine Learning/Deep Learning\n\n\n\nHongik University Algorithm Club HIARC (Mar. 2018 ~ Feb. 2019)\n\nData Science From Scratch Study\nAlgorithm Elementary/Medium Study\n\n\n\nPython Programming Using Big Data, Samsung MultiCampus (Jan. 2019 ~ Feb. 2019) GitHub\n\nBasic Python\nWeb Programming with Flask\nBuilding database using MySQL\n\n\n\nBig Data University Union Club BOAZ - management staff (Jan. 2019 ~ Jan. 2020) GitHub\n\nWeb Crawling Lecture Using BeautifulSoup and Selenium\nBasic Lecture for Convolutional Neural Network (CNNs)\nBasic Lecture for kaggle using Titanic Dataset\nBasic Lecture for Deep Learning Framework (TensorFlow, PyTorch, Keras)\nMachine Learning Study - HandsOnMachineLearning\nDeep Learning Study - Deep Learning from scratch\nBOAZ Graduation Project - Real Time Violence Detection YouTube\n\n\n\nPython-based Big Data Analysis Processing, Korea Data Industry Promotion Agency (Jul. 2019 - Aug. 2019) GitHub\n\nSimple data analysis with Numpy and Pandas\nVisualizing Data with Matplotlib and Seaborn\nPre-processing and Machine Learning Modeling with Scikit-Learn\nDeep Learning Modeling Using Tensorflow and Keras Deep Learning Framework\n\n\n\n1st Drone Festival, Intel Korea (Aug. 2019)\n\nDrone driving training through Tello drones\nCompletion of basic object recognition education through OpenVINO and Caffe\nModifying the learned deep learning model to MobileNet to complete additional labs"
-  },
-  {
-    "objectID": "about.html#lecture",
-    "href": "about.html#lecture",
-    "title": "Minsuk Sung",
-    "section": "Lecture",
-    "text": "Lecture\n\n분석인프라활용 AI 교육, 한국정보화진흥원 (NIA)\n\n\nSK 인공지능 신입전사교육 조교, 패스트캠퍼스(FastCampus) (Jan. 2021)\n\nBasic content of artificial intelligence and deep learning\n\n\n\nObject Detection, Intel Korea (Mar. 2020 ~ Current) GitHub\n\nDetecting objects using TensorFlow API\nConverting TensorFlow pb file to OpenVINO xml and bin file\n\n\n\nImage Classification, Intel Korea (Nov. 2019 ~ Feb. 2020) GitHub\n\nClassfiying image and modeling MobileNet based on TensorFlow/Keras\nConverting TensorFlow pb file to OpenVINO xml and bin file"
-  },
-  {
-    "objectID": "about.html#work-experience",
-    "href": "about.html#work-experience",
-    "title": "Minsuk Sung",
-    "section": "Work Experience",
-    "text": "Work Experience\n\nUPSTAGE AI Mentor, NAVER Boostcamp AI Tech Course (Jan. 2021 ~ Current)\n\nCompetition of math equation recognition\nPyTorch and Object Detection\n\n\n\nAIFFEL AI Mentor, [MODULAB] (May. 2022 ~ Jun. 2022)\n\n머신러닝/딥러닝을 기반으로 이더리움 트레이딩 프로젝트\n\n\n\nIntern, MIRAE ASSET DAEWOO.CO., LTD. (Jan. 2021 ~ Feb. 2021)\n\nComparative analysis of financial company app reputation based on natural language process"
-  },
-  {
-    "objectID": "about.html#honors-awards",
-    "href": "about.html#honors-awards",
-    "title": "Minsuk Sung",
-    "section": "Honors & Awards",
-    "text": "Honors & Awards\n\n\n\nYear\nAward\nOrganization\nPlace\nReference\n\n\n\n\nFeb. 2021\n2021 구강계질환 의료영상 AI 경진 대회\n삼성서울병원 / 아주대학교병원 / 한국지능정보사회진흥원\n3등 (팀 Aㅏ해보세요)\nArticle\n\n\nDec. 2020\n제4회 빅데이터 페스티벌\n미래에셋대우\n우수상 (팀 상타나HOXY)\nArticle\n\n\nJun. 2020\n생체 광학 데이터 분석 AI 분석대회\nDACON\n7등 / 696등\n\n\n\nApr. 2020\n공공 데이터 활용 온도 추정 AI 경진대회\nDACON\n2등 / 1,081등\n\n\n\nNov. 2019\n제3회 빅데이터 페스티벌\n미래에셋대우\n금상 (팀 이등)\nArticle\n\n\nNov. 2019\n제7회 빅콘테스트\n과학기술부 / 한국정보화진흥원\n최우수상 (팀 메로나)\n\n\n\nSep. 2019\n우주전파재난 예측 AI 경진대회\n국립전파연구원\n본선 7등\n\n\n\nMar. 2019\n서울 하드웨어 해커톤\n서울산업진흥원(SBA)\n3등"
-  },
-  {
-    "objectID": "about.html#patents",
-    "href": "about.html#patents",
-    "title": "Minsuk Sung",
-    "section": "Patents",
-    "text": "Patents\n\n\n\nYear\nTitle of the Invention\nPatent No.\n\n\n\n\n2019\n허브터미널 후보지역 선정방법\n제 10-2019-0013100 호\n\n\n2019\nPrediction of Human Path using GAN\n-"
+    "objectID": "posts/test2/index.html",
+    "href": "posts/test2/index.html",
+    "title": "테스트2",
+    "section": "",
+    "text": "Deep-Diving into the world of Deep Learning and Trading안녕하세요\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
   },
   {
     "objectID": "code/chatgpt_example.html",
@@ -91,53 +77,32 @@
     "text": "Deep-Diving into the world of Deep Learning and Trading\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nChatGPT in Python\n\n\n\ncode\n\n\nai\n\n\n\n\n\n\n\n성민석\n\n\nApr 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 테스트\n\n\n\nnews\n\n\n\n\n\n\n\n성민석\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n테스트2\n\n\n\nnews\n\n\n\n\n\n\n\n성민석\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nApr 8, 2023\n\n\n\n\n\n\n\n\nNo matching items\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "Deep-Diving into the world of Deep Learning and TradingThis is a post with executable code.\nprint('hello')\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
-  },
-  {
-    "objectID": "posts/test/chatgpt_example.html",
-    "href": "posts/test/chatgpt_example.html",
-    "title": "ChatGPT in Python",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Minsuk Sung",
     "section": "",
     "text": "Deep-Diving into the world of Deep Learning and Trading\nCopyright © 2023 Minsuk Sung All rights reserved."
   },
   {
-    "objectID": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
-    "href": "posts/test/chatgpt_example.html#간단한-chatgpt-코드",
-    "title": "ChatGPT in Python",
-    "section": "간단한 ChatGPT 코드",
-    "text": "간단한 ChatGPT 코드\n\nimport openai\nimport getpass\n\nYOUR_API_KEY = getpass.getpass('Input your api key: ')\n\n\ndef chatGPT(prompt, API_KEY=YOUR_API_KEY):\n\n    # set api key\n    openai.api_key = API_KEY\n\n    # Call the chat GPT API\n    completion = openai.Completion.create(\n        engine='text-davinci-003',  # 'text-curie-001'  # 'text-babbage-001' #'text-ada-001'\n        prompt=prompt,\n        temperature=0.5,\n        max_tokens=1024,\n        top_p=1,\n        frequency_penalty=0,\n        presence_penalty=0\n    )\n\n    return completion['choices'][0]['text']\n\n\nprompt = '다음 문장을 영어로 번역해줘. 이것은 Quarto를 포스팅하기 위한 실험용 포스팅 글입니다.'\n\n\nresult = chatGPT(prompt).strip()\nprint('\\nAnswer: {}'.format(result))"
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Minsuk Sung",
+    "section": "Education",
+    "text": "Education\nHongik University, Seoul | Seoul, Korea\nB.A in Computer Engineering | Mar 2014 - Feb 2020\nKorea University, Seoul | Seoul, Korea\nPh.D student in Artificial Intelligence | Mar 2020 - Current"
   },
   {
-    "objectID": "posts/test/chatgpt_example.html#이후-과정",
-    "href": "posts/test/chatgpt_example.html#이후-과정",
-    "title": "ChatGPT in Python",
-    "section": "이후 과정",
-    "text": "이후 과정\n$ quarto convert chatgpt_example.ipynb\n$ quarto render --no-execute-daemon"
+    "objectID": "about.html#topics",
+    "href": "about.html#topics",
+    "title": "Minsuk Sung",
+    "section": "Topics",
+    "text": "Topics\nDeep Learning, Computer Vision, Object Detection, Explainable A.I.\nQuantative trading, System trading and Algorithm trading"
   },
   {
-    "objectID": "posts/test/index.html",
-    "href": "posts/test/index.html",
-    "title": "Quarto 테스트",
-    "section": "",
-    "text": "Deep-Diving into the world of Deep Learning and Trading안녕하세요!!\n\n\nFruit prices\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\nFigure 1: ?(caption)\n\n\n\\[\na^2 + b^2 = c^2\n\\]\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
-  },
-  {
-    "objectID": "posts/test2/index.html",
-    "href": "posts/test2/index.html",
-    "title": "테스트2",
-    "section": "",
-    "text": "Deep-Diving into the world of Deep Learning and Trading안녕하세요\n\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Deep-Diving into the world of Deep Learning and TradingThis is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\nCopyright © 2023 Minsuk Sung All rights reserved. Back to top"
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "Minsuk Sung",
+    "section": "Contact",
+    "text": "Contact\nPlease contact me if you want to know more about me! See CV for more information.\n\nPhone : +82-10-5134-3621\n\nE-mail: minsuksung@korea.ac.kr\n\nBlog: minsuk-sung.github.io\nLinkedIn: https://www.linkedin.com/in/minsuk-sung/\nGitHub: https://github.com/minsuk-sung\n\nThank you for visiting my blog."
   },
   {
     "objectID": "project.html",
